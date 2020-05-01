@@ -1,0 +1,46 @@
+import openpyxl as px
+wb = px.load_workbook("test1.xlsx")
+wb.sheetnames
+ws2_copy = wb.copy_worksheet(wb["Sheet1"])
+ws = wb["Sheet1"]
+for sheet in wb:
+	print(sheet.title)
+>>> ws.min_column
+1
+>>> ws.max_column
+6
+>>> ws.max_row
+4
+>>> ws.max_row
+4
+>>> ws.min_row
+
+for i in ws.rows:
+...   vals = []
+...   for cell in row:
+...      print(cell)
+...
+<Cell 'Sheet1'.A1>
+<Cell 'Sheet1'.B1>
+<Cell 'Sheet1'.C1>
+<Cell 'Sheet1'.D1>
+<Cell 'Sheet1'.E1>
+<Cell 'Sheet1'.F1>
+<Cell 'Sheet1'.A2>
+<MergedCell 'Sheet1'.B2>
+<MergedCell 'Sheet1'.C2>
+<Cell 'Sheet1'.D2>
+<MergedCell 'Sheet1'.E2>
+<MergedCell 'Sheet1'.F2>
+<Cell 'Sheet1'.A3>
+<MergedCell 'Sheet1'.B3>
+<Cell 'Sheet1'.C3>
+<Cell 'Sheet1'.D3>
+<Cell 'Sheet1'.E3>
+<MergedCell 'Sheet1'.F3>
+<Cell 'Sheet1'.A4>
+<Cell 'Sheet1'.B4>
+<Cell 'Sheet1'.C4>
+<Cell 'Sheet1'.D4>
+<Cell 'Sheet1'.E4>
+<Cell 'Sheet1'.F4>

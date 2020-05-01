@@ -1,0 +1,4 @@
+###Powershellでpythonの補完機能を有効にする###
+pip install pyreadline
+
+https://qiita.com/emuai/items/baa929365526e2d44ed4
